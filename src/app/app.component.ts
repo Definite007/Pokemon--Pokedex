@@ -30,7 +30,6 @@ export class AppComponent {
     findDetails(value: string){
      this.detailData = '';
      this.detailName = value;
-     console.log(this.detail);
      this.detail.forEach(element => {
       if (element.name === this.detailName){
         this.detailData = JSON.stringify(element);
@@ -41,9 +40,7 @@ export class AppComponent {
     findByEvolutions(value: string){
       this.evolutionData = '';
       this.evolutionName = value;
-      console.log(this.detail);
       this.detail.forEach(element => {
-      console.log(element);
       if (element.next_evolution){
       element.next_evolution.forEach(element1 => {
         if (element1.name === this.evolutionName) {

@@ -1,0 +1,30 @@
+<div>
+  <input type="text" #detailname>
+  <button (click)="findDetails(detailname.value)">Enter</button>
+</div>
+
+<div>
+  <input type="text" #evolutionname>
+  <button (click)="findByEvolutions(evolutionname.value)">Enter</button>
+</div>
+
+<div>
+  <input type="text" #weaknessname>
+  <button (click)="findByWeakness(weaknessname.value)">Enter</button>
+</div>
+
+
+<div (click)="detailName!=''">
+  Details of the Pokemon:
+  <div>{{detailData}}<div>
+</div>
+
+<div (click)="evolutionName!=''">
+  Details of Evolution:
+  <div>{{evolutionData}}</div>
+</div>
+
+<div (click)="weaknessName!=''">
+  Details by Weakness:
+  <div>{{weaknessData}}</div>
+</div>
